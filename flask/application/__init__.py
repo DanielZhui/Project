@@ -3,7 +3,7 @@ import logging
 from logging.handlers import RotatingFileHandler
 from flask import Flask
 from redis import StrictRedis
-from flask_wtf.csrf import CsrfProtect
+from flask_wtf.csrf import CSRFProtect
 from flask_session import Session
 from flask_sqlalchemy import SQLAlchemy
 from application.settings.dev import DevelopementConfig
@@ -45,12 +45,16 @@ def init_app(config_name):
     global redis_store
     redis_store = StrictRedis(host=Config.REDIS_HOST,port=Config.REDIS_PORT,db=0)
     # 开启CSRF防范功能
-    CsrfProtect(app)
+    CSRFProtect(app)
     # 开启session功能
     Session(app)
     # 配置数据库链接
     db.init_app(app)
     # 启用日志功能
     setup_log(Config)
+    # TODO注册蓝图对象到app应用中
+    # 首页模块
+    from .apps.index import index_blu
+    app.register_blueprint(index_blu,url_prefix='')
 
     return app

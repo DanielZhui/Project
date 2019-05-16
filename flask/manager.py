@@ -10,7 +10,10 @@ manager = Manager(app)
 # 启用数据迁移工具
 Migrate(app, db)
 # 添加数据迁移的命令道终端脚本工具中
-manager.add_command("db", MigrateCommand)
+manager.add_command('db', MigrateCommand)
+
+# 导入模型[进行数据迁移]
+from application.apps.index.models import Student
 
 
 @app.route('/index')
@@ -19,4 +22,5 @@ def index():
 
 
 if __name__ == '__main__':
-    app.run(host="127.0.0.1", port=8000)
+    # app.run(host="127.0.0.1", port=8000)
+    manager.run()

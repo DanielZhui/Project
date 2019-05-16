@@ -12,3 +12,39 @@ INFO _internal.py:122  * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit
 INFO _internal.py:122 127.0.0.1 - - [16/May/2019 18:57:16] "GET / HTTP/1.1" 404 -
 INFO _internal.py:122 127.0.0.1 - - [16/May/2019 18:57:17] "GET /favicon.ico HTTP/1.1" 404 -
 INFO _internal.py:122 127.0.0.1 - - [16/May/2019 18:57:19] "GET /index HTTP/1.1" 200 -
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 270-680-081
+INFO _internal.py:122  * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 270-680-081
+INFO _internal.py:122  * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+INFO _internal.py:122 127.0.0.1 - - [16/May/2019 21:34:56] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 270-680-081
+INFO _internal.py:122  * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+INFO _internal.py:122 127.0.0.1 - - [16/May/2019 21:35:59] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122  * Detected change in 'E:\\super项目\\github\\flask\\Project\\flask\\manager.py', reloading
+INFO _internal.py:122  * Restarting with stat
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 270-680-081
+INFO _internal.py:122  * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 270-680-081
+INFO _internal.py:122  * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+INFO _internal.py:122  * Detected change in 'E:\\super项目\\github\\flask\\Project\\flask\\manager.py', reloading
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 270-680-081
+INFO _internal.py:122  * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 270-680-081
+INFO _internal.py:122  * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+INFO _internal.py:122  * Detected change in 'E:\\super项目\\github\\flask\\Project\\flask\\manager.py', reloading
+INFO _internal.py:122  * Restarting with stat
+ERROR __init__.py:97 Error: Directory migrations already exists

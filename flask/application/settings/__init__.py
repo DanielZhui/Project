@@ -10,7 +10,7 @@ class Config(object):
     # todo配置日志
     LOG_LEVEL = "DEBUG"
     # mysql数据库的配置信息
-    SQLALCHEMY_DATABASE_URI = "mysql://root:mysql@127.0.0.1:3306/students?charset=utf8"
+    SQLALCHEMY_DATABASE_URI = "mysql://root:520@127.0.0.1:3306/students?charset=utf8"
     # 动态追踪修改设置（如果设置只会意识警告）
     SQLALCHEMY_TRACK_MODIFICATIONS = False
     # 查询时会显示原始的SQL语句
