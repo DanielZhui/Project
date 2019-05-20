@@ -2,14 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f2347daf-32e3-45b1-b56f-9a598012de5c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/apps/index/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/apps/index/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/apps/index/views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/statics/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/apps/index/templates/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/static/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/static/matrix/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/static/matrix/bootstrap-responsive.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/static/matrix/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/static/matrix/font-awesome.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/static/matrix/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/static/matrix/login.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/static/matrix/matrix-login.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/static/matrix/matrix.login.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/static/matrix/particles.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/static/matrix/particlesapp.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/templates/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/templates/register.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/application/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/settings/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/application/settings/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/apps/index/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/application/apps/index/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/apps/index/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/application/apps/index/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/statics/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/application/apps/index/templates/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/manager.py" beforeDir="false" afterPath="$PROJECT_DIR$/manager.py" afterDir="false" />
     </list>
@@ -20,7 +30,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/flask$manager.coverage" NAME="manager Coverage Results" MODIFIED="1558012710738" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/flask$manager.coverage" NAME="manager Coverage Results" MODIFIED="1558230882088" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -59,39 +69,50 @@
     <session id="-91249307">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="2" />
           <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.11" value="1" />
+          <entry key="project.open.time.21" value="1" />
+          <entry key="project.open.time.23" value="1" />
           <entry key="project.open.time.3" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="log" value="2" />
+          <entry key="css" value="4" />
+          <entry key="html" value="4" />
+          <entry key="js" value="1" />
+          <entry key="log" value="3" />
           <entry key="permission" value="1" />
-          <entry key="py" value="15" />
+          <entry key="py" value="21" />
           <entry key="sql" value="1" />
           <entry key="student" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
+          <entry key="CSS" value="4" />
           <entry key="Database Element" value="2" />
-          <entry key="Log" value="2" />
-          <entry key="Python" value="15" />
+          <entry key="HTML" value="4" />
+          <entry key="JavaScript" value="1" />
+          <entry key="Log" value="3" />
+          <entry key="Python" value="21" />
           <entry key="Scratch" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="4794" />
+          <entry key="html" value="500" />
+          <entry key="py" value="5796" />
           <entry key="txt" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
+          <entry key="HTML" value="500" />
           <entry key="PLAIN_TEXT" value="8" />
-          <entry key="Python" value="4794" />
+          <entry key="Python" value="5796" />
         </counts>
       </usages-collector>
     </session>
@@ -101,11 +122,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/manager.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="25" column="17" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
+            <state relative-caret-position="225">
+              <caret line="15" column="49" lean-forward="true" selection-start-line="15" selection-start-column="49" selection-end-line="15" selection-end-column="49" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
-                <marker date="1558016529646" expanded="true" signature="394:399" ph="..." />
+                <marker date="1558321613082" expanded="true" signature="395:400" ph="..." />
               </folding>
             </state>
           </provider>
@@ -114,8 +135,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/settings/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="14" column="42" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
+            <state relative-caret-position="180">
+              <caret line="12" column="85" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="85" />
               <folding>
                 <marker date="1558013114171" expanded="true" signature="79:84" ph="..." />
               </folding>
@@ -139,31 +160,44 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/apps/index/views.py">
+        <entry file="file://$PROJECT_DIR$/application/settings/dev.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" selection-start-line="8" selection-end-line="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/settings/prop.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="90">
               <caret line="6" selection-start-line="6" selection-end-line="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/application/apps/index/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="405">
+              <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
               <folding>
-                <marker date="1558008905276" expanded="true" signature="60:91" ph="..." />
+                <element signature="e#0#23#0" expanded="true" />
+                <marker date="1558324373198" expanded="true" signature="103:134" ph="..." />
+                <marker date="1558324373198" expanded="true" signature="201:206" ph="..." />
+                <marker date="1558324373198" expanded="true" signature="352:357" ph="..." />
+                <marker date="1558324373198" expanded="true" signature="595:600" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/apps/index/__init__.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="20" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/apps/index/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="455">
-              <caret line="58" lean-forward="true" selection-start-line="58" selection-end-line="58" />
+            <state relative-caret-position="465">
+              <caret line="32" column="66" selection-start-line="32" selection-start-column="66" selection-end-line="32" selection-end-column="66" />
               <folding>
                 <element signature="e#15#44#0" expanded="true" />
                 <marker date="1558022108440" expanded="true" signature="96:161" ph="..." />
@@ -176,14 +210,29 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/apps/index/__init__.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="67" selection-start-line="4" selection-start-column="67" selection-end-line="4" selection-end-column="67" />
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>relationship</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -196,12 +245,16 @@
         <option value="$PROJECT_DIR$/application/apps/__init__.py" />
         <option value="$PROJECT_DIR$/application/apps/index.py" />
         <option value="$PROJECT_DIR$/application/apps/views.py" />
-        <option value="$PROJECT_DIR$/application/apps/index/views.py" />
-        <option value="$PROJECT_DIR$/application/apps/index/__init__.py" />
         <option value="$PROJECT_DIR$/application/settings/__init__.py" />
         <option value="$PROJECT_DIR$/application/__init__.py" />
-        <option value="$PROJECT_DIR$/manager.py" />
         <option value="$PROJECT_DIR$/application/apps/index/models.py" />
+        <option value="$PROJECT_DIR$/application/apps/index/templates/login.html" />
+        <option value="$PROJECT_DIR$/application/apps/index/__init__.py" />
+        <option value="$PROJECT_DIR$/application/templates/register.html" />
+        <option value="$PROJECT_DIR$/application/templates/login.html" />
+        <option value="$PROJECT_DIR$/application/templates/test.html" />
+        <option value="$PROJECT_DIR$/manager.py" />
+        <option value="$PROJECT_DIR$/application/apps/index/views.py" />
       </list>
     </option>
   </component>
@@ -211,9 +264,9 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="x" value="-7" />
-    <option name="width" value="1308" />
+    <option name="width" value="1378" />
     <option name="height" value="775" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -224,6 +277,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -239,18 +293,17 @@
             <path>
               <item name="flask" type="b2602c69:ProjectViewProjectNode" />
               <item name="flask" type="462c0819:PsiDirectoryNode" />
-              <item name="application" type="462c0819:PsiDirectoryNode" />
-              <item name="settings" type="462c0819:PsiDirectoryNode" />
+              <item name="migrations" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.console.LAST_STATE" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -259,6 +312,10 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\super项目\github\flask\Project\flask\application\templates" />
+      <recent name="E:\super项目\github\flask\Project\flask\application\statics" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\super项目\github\flask\Project\flask\application\apps\index" />
     </key>
@@ -275,7 +332,27 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.manager">
+    <configuration name="Test: application.apps.index" type="DjangoTestsConfigurationType" factoryName="Django tests" temporary="true">
+      <module name="flask" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="TARGET" value="application.apps.index" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="manager" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="flask" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -298,9 +375,14 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Python.manager" />
+      <item itemvalue="Django tests.Test: application.apps.index" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.manager" />
+        <item itemvalue="Django tests.Test: application.apps.index" />
       </list>
     </recent_temporary>
   </component>
@@ -327,16 +409,15 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
+    <frame x="-7" y="0" width="1378" height="775" extended-state="1" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.14182693" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24506828" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Database Console" weight="0.3296" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.38262478" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32954547" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.31493506" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -347,11 +428,12 @@
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.408" />
       <window_info anchor="bottom" id="Python Console" order="12" />
+      <window_info anchor="bottom" id="Database Console" order="13" weight="0.3296" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="SciView" order="3" weight="0.32980332" />
-      <window_info anchor="right" id="Database" order="4" visible="true" weight="0.25718608" />
+      <window_info anchor="right" id="Database" order="4" weight="0.1674277" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -362,6 +444,42 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/manage.py" />
+    <entry file="file://$PROJECT_DIR$/application/apps/__init__.py" />
+    <entry file="file://$PROJECT_DIR$/application/apps/index/index.py" />
+    <entry file="das://f820a23c-c667-4985-9acb-eba72e8e7bf6/schema/students/table/student" />
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/f820a23c-c667-4985-9acb-eba72e8e7bf6/console.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/Envs/students/Lib/site-packages/flask_sqlalchemy/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="86">
+          <caret line="67" selection-start-line="67" selection-end-line="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://f820a23c-c667-4985-9acb-eba72e8e7bf6/schema/students/table/permission" />
+    <entry file="file://$PROJECT_DIR$/application/apps/index/templates/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/static/matrix/particlesapp.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/static/matrix/bootstrap.min.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/apps/index/templates/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="7" lean-forward="true" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/static/matrix/font-awesome.min.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/static/matrix/bootstrap-responsive.min.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/logs/log">
       <provider selected="true" editor-type-id="LogFileEditorProvider">
         <state relative-caret-position="210">
@@ -369,37 +487,56 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/apps/__init__.py">
+    <entry file="file://$USER_HOME$/Envs/students/Lib/site-packages/flask/templating.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" selection-end-line="5" />
+        <state relative-caret-position="352">
+          <caret line="128" column="36" lean-forward="true" selection-start-line="128" selection-start-column="36" selection-end-line="128" selection-end-column="36" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/apps/index/views.py">
+    <entry file="file://$USER_HOME$/Envs/students/Lib/site-packages/flask/app.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        <state relative-caret-position="181">
+          <caret line="1996" selection-start-line="1996" selection-end-line="1996" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/templates/register.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/apps/index/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="32" column="66" selection-start-line="32" selection-start-column="66" selection-end-line="32" selection-end-column="66" />
           <folding>
-            <marker date="1558008905276" expanded="true" signature="60:91" ph="..." />
+            <element signature="e#15#44#0" expanded="true" />
+            <marker date="1558022108440" expanded="true" signature="96:161" ph="..." />
+            <marker date="1558022108440" expanded="true" signature="465:470" ph="..." />
+            <marker date="1558022108440" expanded="true" signature="835:840" ph="..." />
+            <marker date="1558022108440" expanded="true" signature="1582:1587" ph="..." />
+            <marker date="1558022108440" expanded="true" signature="1878:1883" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/apps/index/index.py">
+    <entry file="file://$PROJECT_DIR$/application/templates/test.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        <state relative-caret-position="281">
+          <caret line="20" column="4" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
+          <folding>
+            <element signature="n#style#0;n#a#0;n#ul#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/settings/prop.py">
+    <entry file="file://$PROJECT_DIR$/application/templates/login.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-          <folding>
-            <marker date="1557999593952" expanded="true" signature="54:74" ph="..." />
-          </folding>
+        <state relative-caret-position="536">
+          <caret line="45" column="33" selection-start-line="45" selection-start-column="33" selection-end-line="45" selection-end-column="33" />
         </state>
       </provider>
     </entry>
@@ -407,16 +544,34 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/settings/prop.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manager.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="49" lean-forward="true" selection-start-line="15" selection-start-column="49" selection-end-line="15" selection-end-column="49" />
           <folding>
-            <marker date="1557999593773" expanded="true" signature="72:77" ph="..." />
+            <element signature="e#0#35#0" expanded="true" />
+            <marker date="1558321613082" expanded="true" signature="395:400" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/apps/index/__init__.py">
+    <entry file="file://$PROJECT_DIR$/application/settings/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="20" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
+        <state relative-caret-position="180">
+          <caret line="12" column="85" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="85" />
+          <folding>
+            <marker date="1558013114171" expanded="true" signature="79:84" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -433,62 +588,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/settings/__init__.py">
+    <entry file="file://$PROJECT_DIR$/application/apps/index/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="14" column="42" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
+        <state relative-caret-position="60">
+          <caret line="4" column="67" selection-start-line="4" selection-start-column="67" selection-end-line="4" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/apps/index/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
           <folding>
-            <marker date="1558013114171" expanded="true" signature="79:84" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://f820a23c-c667-4985-9acb-eba72e8e7bf6/schema/students/table/student">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/f820a23c-c667-4985-9acb-eba72e8e7bf6/console.sql">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/manager.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="17" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-            <marker date="1558016529646" expanded="true" signature="394:399" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Envs/students/Lib/site-packages/flask_sqlalchemy/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="86">
-          <caret line="67" selection-start-line="67" selection-end-line="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://f820a23c-c667-4985-9acb-eba72e8e7bf6/schema/students/table/permission">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/apps/index/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="455">
-          <caret line="58" lean-forward="true" selection-start-line="58" selection-end-line="58" />
-          <folding>
-            <element signature="e#15#44#0" expanded="true" />
-            <marker date="1558022108440" expanded="true" signature="96:161" ph="..." />
-            <marker date="1558022108440" expanded="true" signature="465:470" ph="..." />
-            <marker date="1558022108440" expanded="true" signature="835:840" ph="..." />
-            <marker date="1558022108440" expanded="true" signature="1582:1587" ph="..." />
-            <marker date="1558022108440" expanded="true" signature="1878:1883" ph="..." />
+            <element signature="e#0#23#0" expanded="true" />
+            <marker date="1558324373198" expanded="true" signature="103:134" ph="..." />
+            <marker date="1558324373198" expanded="true" signature="201:206" ph="..." />
+            <marker date="1558324373198" expanded="true" signature="352:357" ph="..." />
+            <marker date="1558324373198" expanded="true" signature="595:600" ph="..." />
           </folding>
         </state>
       </provider>

@@ -1,6 +1,6 @@
 from application import init_app,db
 from flask_script import Manager
-from flask_migrate import Migrate,MigrateCommand
+from flask_migrate import Migrate, MigrateCommand
 
 # 提供两种模式：dev和prop
 app = init_app("dev")
@@ -22,5 +22,5 @@ def index():
 
 
 if __name__ == '__main__':
-    # app.run(host="127.0.0.1", port=8000)
-    manager.run()
+    app.run(host="127.0.0.1", port=8000)
+    # manager.run()
