@@ -1,4 +1,36 @@
 const querystring = require("querystring")
+const handleUserRouter = require("./router/user")
+
+// get POST data
+const getPostData = (req) => {
+    const promise = new Promise((resolve, reject) => {
+        if (req.method !== "POST") {
+            resolve({})
+            return
+        }
+
+        if (req.headers["content-type"] !== "application/json") {
+            resolve({})
+            return
+        }
+
+        let postData = ""
+        req.on("data", chunk => {
+            postData += chunk.toString()
+        })
+        req.on("end", () => {
+            console.log(postData)
+            if (!postData) {
+                resolve({})
+                return
+            }
+            resolve(
+                JSON.parse(postData)
+            )
+        })
+    })
+    return promise
+}
 
 const serverHandle = (req, res) => {
     // set response format
@@ -11,11 +43,14 @@ const serverHandle = (req, res) => {
     // analysis query
     req.query = querystring.parse(url.split("?")[1])
 
-    // handle url rote
-    if (req.method === "GET" && req.path === "/index") {
-        res.write("hello world")
-        res.end()
-    }
+    console.log(req.path)
+
+    // handle User url rote
+    getPostData(req).then(postData => {
+        req.body = postData
+        const userResult = handleUserRouter(req, res)
+    })
+
 }
 
 module.exports = serverHandle
