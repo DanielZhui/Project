@@ -1,5 +1,6 @@
 const querystring = require("querystring")
 const handleUserRouter = require("./router/user")
+const handleBlogRouter = require("./router/blog")
 
 // get POST data
 const getPostData = (req) => {
@@ -44,8 +45,10 @@ const serverHandle = (req, res) => {
     req.query = querystring.parse(url.split("?")[1])
 
     console.log(req.path)
+    // handle blog route
+    const blogResult = handleBlogRouter(req, res)
 
-    // handle User url rote
+    // handle User url route
     getPostData(req).then(postData => {
         req.body = postData
         const userResult = handleUserRouter(req, res)
