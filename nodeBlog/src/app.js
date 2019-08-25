@@ -2,7 +2,7 @@ const querystring = require("querystring")
 const handleUserRouter = require("./router/user")
 const handleBlogRouter = require("./router/blog")
 
-// get POST data
+// get POST data: if req.method === "GET" return {}
 const getPostData = (req) => {
     const promise = new Promise((resolve, reject) => {
         if (req.method !== "POST") {
@@ -45,13 +45,20 @@ const serverHandle = (req, res) => {
     req.query = querystring.parse(url.split("?")[1])
 
     console.log(req.path)
-    // handle blog route
-    const blogResult = handleBlogRouter(req, res)
 
-    // handle User url route
+    // handle url route
     getPostData(req).then(postData => {
+        console.log(postData)
         req.body = postData
+        const blogResult = handleBlogRouter(req, res)
+        if (blogResult) {
+            res.end(JSON.stringify(blogResult))
+        }
+
         const userResult = handleUserRouter(req, res)
+        if (userResult) {
+            res.end(JSON.stringify(userResult))
+        }
     })
 
 }

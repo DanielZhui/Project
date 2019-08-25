@@ -7,12 +7,10 @@ const handleUserRouter = (req, res) => {
         console.log(username, password)
 
         if (username === "alex" && password === 666) {
-            console.log("login success")
-            res.write(JSON.stringify({
+            return {
                 "message": "login success",
                 "status": 200
-            }))
-            res.end()
+            }
         }
     }
 }
