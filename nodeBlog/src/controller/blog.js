@@ -9,17 +9,16 @@ const getList = (author, keyword) => {
         sql += `and title like '%${keyword}'`
     }
     sql += `order by createtime desc;`
-    console.log("sql>>>>", sql)
+    // return a promise object
     return exec(sql)
-    // return [
-    //     {
-    //         "id": 1,
-    //         "title": "title one",
-    //         "content": "content one",
-    //         "author": "tom",
-    //         "createtime": 1566741161001
-    //     }
-    // ]
 }
 
-module.exports = getList
+const getDetail = (id) => {
+    let sql = `select *from blog where id=${id}`
+    return exec(sql)
+}
+
+module.exports = {
+    getList,
+    getDetail
+}

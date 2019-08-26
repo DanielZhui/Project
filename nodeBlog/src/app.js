@@ -52,7 +52,12 @@ const serverHandle = (req, res) => {
         req.body = postData
         const blogResult = handleBlogRouter(req, res)
         if (blogResult) {
-            res.end(JSON.stringify(blogResult))
+            blogResult.then(blogData => {
+                res.end(
+                    JSON.stringify(blogData)
+                )
+                return
+            })
         }
 
         const userResult = handleUserRouter(req, res)
