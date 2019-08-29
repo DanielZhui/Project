@@ -18,7 +18,26 @@ const getDetail = (id) => {
     return exec(sql)
 }
 
+const newBlog = (blogData = {}) => {
+    const title = blogData.title
+    const content = blogData.content
+    const author = blogData.author
+    // const createtime = Date.now()
+
+    const sql = `
+    insert into blog (title, content, author)
+    value ("${title}", "${content}", "${author}" )
+    `
+    return exec(sql).then(insertData => {
+        console.log("insertData>>>", insertData)
+        return {
+            id: insertData.insertId
+        }
+    })
+}
+
 module.exports = {
     getList,
-    getDetail
+    getDetail,
+    newBlog
 }

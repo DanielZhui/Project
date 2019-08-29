@@ -1,6 +1,7 @@
 const {
     getList,
-    getDetail
+    getDetail,
+    newBlog
 } = require("../controller/blog")
 const { SuccessModel, ErrorModel } = require("../model/resModel")
 
@@ -28,8 +29,11 @@ const handleBlogRouter = (req, res) => {
 
     // new a blog
     if (method === "POST" && req.path === "/api/blog/new") {
-        res.write("new a blog")
-        res.end()
+        data = req.body
+        const result = newBlog(data)
+        return result.then(data => {
+            return new SuccessModel(data)
+        })
     }
 
     // update a blog
