@@ -2,7 +2,8 @@ const {
     getList,
     getDetail,
     newBlog,
-    updateBlog
+    updateBlog,
+    deleteBlog
 } = require("../controller/blog")
 
 const { SuccessModel, ErrorModel } = require("../model/resModel")
@@ -53,8 +54,14 @@ const handleBlogRouter = (req, res) => {
 
     // delete a blog
     if (method === "POST" && req.path === "/api/blog/del") {
-        res.write("delete blog")
-        res.end()
+        const result = deleteBlog(id)
+        return result.then(val => {
+            if (val) {
+                return new SuccessModel()
+            } else {
+                return new ErrorModel("delete blog Error")
+            }
+        })
     }
 }
 
