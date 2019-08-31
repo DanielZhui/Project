@@ -20,7 +20,6 @@ const getPostData = (req) => {
             postData += chunk.toString()
         })
         req.on("end", () => {
-            console.log(postData)
             if (!postData) {
                 resolve({})
                 return
@@ -48,7 +47,6 @@ const serverHandle = (req, res) => {
 
     // handle url route
     getPostData(req).then(postData => {
-        console.log(postData)
         req.body = postData
         const blogResult = handleBlogRouter(req, res)
         if (blogResult) {

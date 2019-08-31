@@ -22,7 +22,6 @@ const newBlog = (blogData = {}) => {
     const title = blogData.title
     const content = blogData.content
     const author = blogData.author
-    // const createtime = Date.now()
 
     const sql = `
     insert into blog (title, content, author)
@@ -36,8 +35,28 @@ const newBlog = (blogData = {}) => {
     })
 }
 
+const updateBlog = (id, blogDate = {}) => {
+    // id: blog id
+    // blogDate: need to update blog content and title
+    const title = blogDate.title
+    const content = blogDate.content
+
+    const sql = `
+    update blog set title="${title}", content="${content}" where id="${id}"
+    `
+
+    return exec(sql).then(updateData => {
+        console.log("updateData =>", updateData)
+        if (updateData.affectedRows > 0) {
+            return true
+        }
+        return false
+    })
+}
+
 module.exports = {
     getList,
     getDetail,
-    newBlog
+    newBlog,
+    updateBlog
 }
